@@ -8,6 +8,16 @@ import {
   clearDecorators,
 } from "@storybook/react-native";
 
+global.STORIES = [
+  {
+    titlePrefix: "",
+    directory: "./components",
+    files: "**/*.stories.?(ts|tsx|js|jsx)",
+    importPathMatcher:
+      "^\\.[\\\\/](?:components(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)\\/|\\/|$)(?!\\.)(?=.)[^/]*?\\.stories\\.(?:ts|tsx|js|jsx)?)$",
+  },
+];
+
 import "@storybook/addon-ondevice-notes/register";
 import "@storybook/addon-ondevice-controls/register";
 import "@storybook/addon-ondevice-backgrounds/register";
@@ -38,7 +48,9 @@ try {
 } catch {}
 
 const getStories = () => {
-  return [require("../components/Button/Button.stories.tsx")];
+  return {
+    "./components/Button/Button.stories.tsx": require("../components/Button/Button.stories.tsx"),
+  };
 };
 
 configure(getStories, module, false);
