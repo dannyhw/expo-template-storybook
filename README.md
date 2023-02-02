@@ -3,9 +3,14 @@
 # getting started
 
 ```
-expo init --template expo-template-storybook AwesomeStorybook
+npx create-expo-app --template expo-template-storybook AwesomeStorybook
 ```
 
+or
+
+``` 
+yarn create expo-app --template expo-template-storybook AwesomeStorybook
+```
 # Ondevice
 
 ```
