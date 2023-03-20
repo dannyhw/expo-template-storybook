@@ -10,7 +10,6 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "prestorybook": "yarn update-stories",
     "storybook:web": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "storybook-generate": "sb-rn-get-stories --config-path .ondevice",
