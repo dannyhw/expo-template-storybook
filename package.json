@@ -47,7 +47,6 @@
     "@storybook/react": "^6.5.16",
     "@storybook/react-native": "^6.5.1",
     "@types/react": "~18.0.27",
-    "@types/react-native": "~0.70.6",
     "babel-loader": "^8.2.3",
     "babel-plugin-react-docgen-typescript": "^1.5.1",
     "babel-plugin-react-native-web": "^0.18.10",
