@@ -11,6 +11,7 @@ export const parameters = {
       { name: "cool", value: "deepskyblue" },
     ],
   },
+  actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
       color: /(background|color)$/i,
