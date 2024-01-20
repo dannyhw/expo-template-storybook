@@ -9,9 +9,6 @@ const MyButtonMeta: Meta<typeof MyButton> = {
   args: {
     text: "Hello world",
   },
-  argTypes: {
-    onPress: { action: "onPress" },
-  },
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
