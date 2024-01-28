@@ -20,6 +20,6 @@ const meta = {
 
 export default meta;
 
-type Story = StoryObj<typeof MyButton>;
+type Story = StoryObj<typeof meta>;
 
 export const Basic: Story = {};
