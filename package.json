@@ -1,7 +1,7 @@
 {
   "name": "expo-template-storybook",
   "description": "template for react native storybook 6 and react native web",
-  "version": "3.0.0",
+  "version": "4.0.4-0",
   "main": "node_modules/expo/AppEntry.js",
   "license": "MIT",
   "scripts": {
@@ -10,61 +10,58 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "eject": "expo eject",
-    "storybook:web": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:web": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
     "storybook-generate": "sb-rn-get-stories --config-path .ondevice",
-    "storybook-watch": "sb-rn-watcher --config-path .ondevice",
-    "storybook": "sb-rn-get-stories --config-path .ondevice && cross-env STORYBOOK_ENABLED='true' expo start",
-    "storybook:ios": "sb-rn-get-stories --config-path .ondevice && cross-env STORYBOOK_ENABLED='true' expo start --ios",
-    "storybook:android": "sb-rn-get-stories --config-path .ondevice && cross-env STORYBOOK_ENABLED='true' expo start --android"
+    "storybook": "cross-env STORYBOOK_ENABLED='true' expo start",
+    "storybook:ios": "cross-env STORYBOOK_ENABLED='true' expo start --ios",
+    "storybook:android": "cross-env STORYBOOK_ENABLED='true' expo start --android"
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "1.18.2",
-    "@react-native-community/datetimepicker": "7.2.0",
+    "@react-native-async-storage/async-storage": "1.21.0",
+    "@react-native-community/datetimepicker": "7.6.1",
     "@react-native-community/slider": "4.4.2",
-    "expo": "^49.0.7",
-    "expo-constants": "~14.4.2",
-    "expo-status-bar": "~1.6.0",
+    "expo": "~50.0.4",
+    "expo-constants": "~15.4.5",
+    "expo-status-bar": "~1.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native": "0.72.3",
-    "react-native-safe-area-context": "4.6.3",
-    "react-native-web": "~0.19.6"
+    "react-native": "0.73.2",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
-    "@storybook/addon-actions": "^6.5.16",
-    "@storybook/addon-controls": "^6.5.16",
-    "@storybook/addon-essentials": "^6.5.16",
-    "@storybook/addon-links": "^6.5.16",
-    "@storybook/addon-ondevice-actions": "^6.5.6",
-    "@storybook/addon-ondevice-backgrounds": "^6.5.6",
-    "@storybook/addon-ondevice-controls": "^6.5.6",
-    "@storybook/addon-ondevice-notes": "^6.5.6",
-    "@storybook/addon-react-native-web": "^0.0.21",
-    "@storybook/builder-webpack5": "^6.5.16",
-    "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^6.5.16",
-    "@storybook/react-native": "^6.5.6",
-    "@types/react": "~18.2.14",
+    "@expo/metro-runtime": "^3.1.1",
+    "@storybook/addon-actions": "^7.6.10",
+    "@storybook/addon-controls": "^7.6.10",
+    "@storybook/addon-essentials": "^7.6.10",
+    "@storybook/addon-links": "^7.6.10",
+    "@storybook/addon-ondevice-actions": "7.6.10-rc.0",
+    "@storybook/addon-ondevice-backgrounds": "7.6.10-rc.0",
+    "@storybook/addon-ondevice-controls": "7.6.10-rc.0",
+    "@storybook/addon-ondevice-notes": "7.6.10-rc.0",
+    "@storybook/addon-react-native-web": "^0.0.22",
+    "@storybook/react": "^7.6.10",
+    "@storybook/react-native": "7.6.10-rc.0",
+    "@storybook/react-webpack5": "^7.6.10",
+    "@types/react": "~18.2.45",
     "babel-loader": "^8.2.3",
     "babel-plugin-react-docgen-typescript": "^1.5.1",
-    "babel-plugin-react-native-web": "^0.18.10",
-    "typescript": "^5.1.3",
-    "cross-env": "^7.0.3"
+    "babel-plugin-react-native-web": "^0.19.10",
+    "cross-env": "^7.0.3",
+    "storybook": "^7.6.10",
+    "typescript": "^5.3.0"
   },
   "resolutions": {
-    "react-docgen-typescript": "2.2.2",
-    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
+    "react-docgen-typescript": "2.2.2"
   },
   "overrides": {
-    "react-docgen-typescript": "2.2.2",
-    "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
+    "react-docgen-typescript": "2.2.2"
   },
   "pnpm": {
     "overrides": {
-      "react-docgen-typescript": "2.2.2",
-      "@storybook/react-docgen-typescript-plugin": "1.0.6--canary.9.cd77847.0"
+      "react-docgen-typescript": "2.2.2"
     }
   }
 }
