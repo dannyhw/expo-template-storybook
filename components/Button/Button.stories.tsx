@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { action } from "@storybook/addon-actions";
 import React from "react";
 import { View } from "react-native";
 import { MyButton } from "./Button";
@@ -22,4 +23,8 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Basic: Story = {};
+export const Basic: Story = {
+  args: {
+    onPress: action("onPress"),
+  },
+};
