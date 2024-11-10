@@ -1,26 +1,20 @@
-/** @type{import("@storybook/react-webpack5").StorybookConfig} */
+/** @type{import("@storybook/react-native-web-vite").StorybookConfig} */
 module.exports = {
   stories: [
     "../components/**/*.stories.mdx",
     "../components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
 
-  addons: [
-    "@storybook/addon-links",
-    "@storybook/addon-essentials",
-    "@storybook/addon-react-native-web",
-    "@storybook/addon-webpack5-compiler-babel",
-    "@chromatic-com/storybook"
-  ],
+  addons: ["@storybook/addon-essentials", "@chromatic-com/storybook"],
 
   framework: {
-    name: "@storybook/react-webpack5",
+    name: "@storybook/react-native-web-vite",
     options: {},
   },
 
   docs: {},
 
   typescript: {
-    reactDocgen: "react-docgen-typescript"
-  }
+    reactDocgen: "react-docgen-typescript",
+  },
 };
