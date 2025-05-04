@@ -59,14 +59,17 @@
     "vite": "^6.0.11"
   },
   "resolutions": {
-    "react-docgen-typescript": "2.2.2"
+    "react-docgen-typescript": "2.2.2",
+    "react-native-web":"^0.20.0"
   },
   "overrides": {
-    "react-docgen-typescript": "2.2.2"
+    "react-docgen-typescript": "2.2.2",
+    "react-native-web":"^0.20.0"
   },
   "pnpm": {
     "overrides": {
-      "react-docgen-typescript": "2.2.2"
+      "react-docgen-typescript": "2.2.2",
+      "react-native-web":"^0.20.0"
     }
   }
 }
