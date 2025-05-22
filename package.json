@@ -1,7 +1,7 @@
 {
   "name": "expo-template-storybook",
   "description": "template for react native storybook and react native web",
-  "version": "5.0.0-0",
+  "version": "5.0.1-0",
   "main": "node_modules/expo/AppEntry.js",
   "license": "MIT",
   "scripts": {
@@ -55,16 +55,16 @@
   },
   "resolutions": {
     "react-docgen-typescript": "2.2.2",
-    "react-native-web":"^0.20.0"
+    "react-native-web": "^0.20.0"
   },
   "overrides": {
     "react-docgen-typescript": "2.2.2",
-    "react-native-web":"^0.20.0"
+    "react-native-web": "^0.20.0"
   },
   "pnpm": {
     "overrides": {
       "react-docgen-typescript": "2.2.2",
-      "react-native-web":"^0.20.0"
+      "react-native-web": "^0.20.0"
     }
   }
 }
