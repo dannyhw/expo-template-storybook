@@ -11,7 +11,7 @@ export default function Index() {
       }}
     >
       {process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true" ? (
-        <Link href="/storybook">Open Storybook</Link>
+        <Link href="/(storybook)">Open Storybook</Link>
       ) : (
         <Text>Hello World (storybook disabled)</Text>
       )}
