@@ -13,3 +13,4 @@ yarn-error.log
 yarn-debug.log*
 npm-debug.log*
 node_modules/**/*
+.yarn/**/*
