@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
+    "@babel/plugin-transform-class-static-block": "^7.27.1",
     "@babel/preset-env": "^7.25.4",
     "@chromatic-com/storybook": "^4.0.0",
     "@expo/metro-runtime": "~5.0.4",
@@ -54,8 +55,7 @@
     "cross-env": "^10.0.0",
     "storybook": "^9.1",
     "typescript": "~5.8.3",
-    "vite": "^7.0.6",
-    "@babel/plugin-transform-class-static-block": "^7.27.1"
+    "vite": "^7.0.6"
   },
   "resolutions": {
     "react-docgen-typescript": "2.2.2"
@@ -67,6 +67,5 @@
     "overrides": {
       "react-docgen-typescript": "2.2.2"
     }
-  },
-  "packageManager": "yarn@3.6.4+sha512.e70835d4d6d62c07be76b3c1529cb640c7443f0fe434ef4b6478a5a399218cbaf1511b396b3c56eb03bc86424cff2320f6167ad2fde273aa0df6e60b7754029f"
+  }
 }
