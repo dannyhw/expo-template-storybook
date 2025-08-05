@@ -1,7 +1,8 @@
-export default ({ config }) => ({
-  ...config,
+import { type ExpoConfig } from "expo/config";
+
+const config: ExpoConfig = {
   name: "HelloWorld",
-  slug: "expo-template-blank-typescript",
+  slug: "hello-world",
   version: "1.0.0",
   orientation: "portrait",
   icon: "./assets/icon.png",
@@ -26,5 +27,13 @@ export default ({ config }) => ({
   },
   web: {
     favicon: "./assets/favicon.png",
+    bundler: "metro",
   },
-});
+  experiments: {
+    // currently compiler isn't supported for storybook, expo 54 should fix this
+    reactCompiler: false,
+    typedRoutes: true,
+  },
+};
+
+export default config;

@@ -4,6 +4,7 @@ module.exports = function (api) {
     presets: ["babel-preset-expo"],
     plugins: [
       ["babel-plugin-react-docgen-typescript", { exclude: "node_modules" }],
+      "@babel/plugin-transform-class-static-block",
     ],
   };
 };
