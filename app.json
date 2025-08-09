@@ -8,7 +8,10 @@
   "newArchEnabled": true,
   "userInterfaceStyle": "automatic",
   "ios": {
-    "supportsTablet": true
+    "supportsTablet": true,
+    "infoPlist": {
+      "ITSAppUsesNonExemptEncryption": false
+    }
   },
   "android": {
     "adaptiveIcon": {
@@ -20,7 +23,7 @@
   "web": {
     "favicon": "./assets/favicon.png",
     "bundler": "metro",
-    "output": "static"
+    "output": "single"
   },
   "plugins": [
     "expo-router",
