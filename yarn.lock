@@ -2523,7 +2523,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@expo/prebuild-config@npm:^9.0.11":
+"@expo/prebuild-config@npm:^9.0.10, @expo/prebuild-config@npm:^9.0.11":
   version: 9.0.11
   resolution: "@expo/prebuild-config@npm:9.0.11"
   dependencies:
@@ -5927,6 +5927,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"expo-splash-screen@npm:~0.30.10":
+  version: 0.30.10
+  resolution: "expo-splash-screen@npm:0.30.10"
+  dependencies:
+    "@expo/prebuild-config": "npm:^9.0.10"
+  peerDependencies:
+    expo: "*"
+  checksum: 10/60fe7f35e23cc994206ab128f7c288519b43429c26c266c2e8b10a3eb045caf3554ee810b911fa76ea305a0c549def40c5544741d71049d0616e74db2fe476c2
+  languageName: node
+  linkType: hard
+
 "expo-status-bar@npm:~2.2.3":
   version: 2.2.3
   resolution: "expo-status-bar@npm:2.2.3"
@@ -5968,6 +5979,7 @@ __metadata:
     expo-constants: "npm:~17.1.7"
     expo-linking: "npm:~7.1.7"
     expo-router: "npm:~5.1.4"
+    expo-splash-screen: "npm:~0.30.10"
     expo-status-bar: "npm:~2.2.3"
     react: "npm:19.0.0"
     react-dom: "npm:19.0.0"

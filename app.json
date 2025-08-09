@@ -1,41 +1,41 @@
 {
-  "expo": {
-    "name": "HelloWorld",
-    "slug": "hello-world",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "newArchEnabled": true,
-    "userInterfaceStyle": "automatic",
-    "scheme": "helloworld",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+  "name": "HelloWorld",
+  "slug": "hello-world",
+  "scheme": "helloworld",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "newArchEnabled": true,
+  "userInterfaceStyle": "automatic",
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#FFFFFF"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      },
-      "edgeToEdgeEnabled": true
-    },
-    "plugins": ["expo-router"],
-    "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
-    },
-    "experiments": {
-      // currently compiler isn't supported for storybook, expo 54 should fix this
-      "reactCompiler": false,
-      "typedRoutes": true
-    }
+    "edgeToEdgeEnabled": true
+  },
+  "web": {
+    "favicon": "./assets/favicon.png",
+    "bundler": "metro",
+    "output": "static"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-splash-screen",
+      {
+        "image": "./assets/splash-icon.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }
+    ]
+  ],
+  "experiments": {
+    "reactCompiler": false,
+    "typedRoutes": true
   }
 }
