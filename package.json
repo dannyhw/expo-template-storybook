@@ -1,7 +1,7 @@
 {
   "name": "expo-template-storybook",
   "description": "template for react native storybook and react native web",
-  "version": "6.0.0-4",
+  "version": "6.0.0-5",
   "main": "expo-router/entry",
   "license": "MIT",
   "scripts": {
