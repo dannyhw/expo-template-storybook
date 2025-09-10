@@ -1,0 +1,44 @@
+{
+  "name": "HelloWorld",
+  "slug": "hello-world",
+  "scheme": "helloworld",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "icon": "./assets/icon.png",
+  "newArchEnabled": true,
+  "userInterfaceStyle": "automatic",
+  "ios": {
+    "supportsTablet": true,
+    "infoPlist": {
+      "ITSAppUsesNonExemptEncryption": false
+    }
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#FFFFFF"
+    },
+    "edgeToEdgeEnabled": true
+  },
+  "web": {
+    "favicon": "./assets/favicon.png",
+    "bundler": "metro",
+    "output": "single"
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-splash-screen",
+      {
+        "image": "./assets/splash-icon.png",
+        "imageWidth": 200,
+        "resizeMode": "contain",
+        "backgroundColor": "#ffffff"
+      }
+    ]
+  ],
+  "experiments": {
+    "reactCompiler": false,
+    "typedRoutes": true
+  }
+}

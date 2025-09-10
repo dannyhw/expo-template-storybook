@@ -8,6 +8,7 @@ const main: StorybookConfig = {
     "@storybook/addon-ondevice-backgrounds",
     "@storybook/addon-ondevice-actions",
   ],
+  framework: "@storybook/react-native",
 };
 
 export default main;

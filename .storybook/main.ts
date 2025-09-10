@@ -12,12 +12,6 @@ const main: StorybookConfig = {
     name: "@storybook/react-native-web-vite",
     options: {},
   },
-
-  docs: {},
-
-  typescript: {
-    reactDocgen: "react-docgen",
-  },
 };
 
 export default main;
