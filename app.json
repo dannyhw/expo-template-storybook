@@ -39,6 +39,7 @@
   ],
   "experiments": {
     "reactCompiler": true,
-    "typedRoutes": true
+    "typedRoutes": true,
+    "tsconfigPaths": true
   }
 }
