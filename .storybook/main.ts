@@ -1,10 +1,7 @@
 import type { StorybookConfig } from "@storybook/react-native-web-vite";
 
 const main: StorybookConfig = {
-  stories: [
-    "../components/**/*.stories.mdx",
-    "../components/**/*.stories.@(js|jsx|ts|tsx)",
-  ],
+  stories: ["../components/**/*.stories.@(js|jsx|ts|tsx)"],
 
   addons: ["@storybook/addon-docs", "@chromatic-com/storybook"],
 

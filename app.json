@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "orientation": "portrait",
   "icon": "./assets/icon.png",
-  "newArchEnabled": true,
   "userInterfaceStyle": "automatic",
   "ios": {
     "supportsTablet": true,
@@ -17,8 +16,7 @@
     "adaptiveIcon": {
       "foregroundImage": "./assets/adaptive-icon.png",
       "backgroundColor": "#FFFFFF"
-    },
-    "edgeToEdgeEnabled": true
+    }
   },
   "web": {
     "favicon": "./assets/favicon.png",
@@ -35,7 +33,9 @@
         "resizeMode": "contain",
         "backgroundColor": "#ffffff"
       }
-    ]
+    ],
+    "@react-native-community/datetimepicker",
+    "expo-status-bar"
   ],
   "experiments": {
     "reactCompiler": true,
