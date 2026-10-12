@@ -30,7 +30,7 @@ const preview: Preview = {
   initialGlobals: {
     // 👇 Set the initial background color
     backgrounds: {
-      value: Appearance.getColorScheme() === "dark" ? "dark" : "plain",
+      value: Appearance.getColorScheme() === "dark" ? "dark" : "light",
     },
   },
 };

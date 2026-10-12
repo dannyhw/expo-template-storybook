@@ -27,7 +27,7 @@ pnpm start
 # RN Storybook (ondevice)
 
 In this template you can run `pnpm storybook` to start ondevice storybook or `pnpm start` to start your expo app.
-This works via the `EXPO_PUBLIC_STORYBOOK_ENABLED` env variable, which is also used in `metro.config.js` to leave Storybook out of the bundle when it is disabled.
+This works via entry-point swapping: when the `STORYBOOK_ENABLED=true` env variable is set, `withStorybook` in `metro.config.js` replaces the app entry point with `.rnstorybook/index.tsx`. When it is not set, your app runs normally and no Storybook code is included in the bundle.
 
 ```sh
 # either

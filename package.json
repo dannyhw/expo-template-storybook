@@ -13,9 +13,9 @@
     "storybook:web": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "storybook-generate": "sb-rn-get-stories",
-    "storybook": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start",
-    "storybook:ios": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --ios",
-    "storybook:android": "cross-env EXPO_PUBLIC_STORYBOOK_ENABLED='true' expo start --android",
+    "storybook": "cross-env STORYBOOK_ENABLED=true expo start",
+    "storybook:ios": "cross-env STORYBOOK_ENABLED=true expo start --ios",
+    "storybook:android": "cross-env STORYBOOK_ENABLED=true expo start --android",
     "prepack": "node scripts/pack-manifest.js strip",
     "postpack": "node scripts/pack-manifest.js restore"
   },
