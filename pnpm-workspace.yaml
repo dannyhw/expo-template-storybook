@@ -1,0 +1,12 @@
+# Keep React Native dependencies in a traditional node_modules layout.
+nodeLinker: hoisted
+
+# react-docgen-typescript newer than 2.2.2 breaks docgen for the Storybook
+# setup in this template. npm and yarn get the same pin from `overrides` and
+# `resolutions` in package.json.
+overrides:
+  react-docgen-typescript: 2.2.2
+
+# Dependencies allowed to run install scripts.
+allowBuilds:
+  esbuild: true

@@ -1,7 +1,9 @@
 node_modules/
+.pnpm-store/
 .expo/
 dist/
 npm-debug.*
+pnpm-debug.log*
 *.jks
 *.p8
 *.p12
@@ -12,9 +14,5 @@ web-build/
 
 # macOS
 .DS_Store
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
+
+storybook-static/
